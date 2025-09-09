@@ -11,32 +11,46 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        
     }
 
     h1 {
         color: rgb(255, 0, 0);
         font-size: 3em;
+        margin-bottom: 0px;
+        font-family: "Georgia", serif;
     }
 
     h2 {
         color: rgb(255, 0, 0);
+        font-family: "Georgia", serif;
     }
 
     h3 {
         color: rgb(160, 65, 65);
+        font-family: "Courier New", serif;
+    }
+
+    header {
+    background-color: #6b0a0a;   /* dark background */
+    color: #ff0000;              /* light text */
+    text-align: center;       /* center the text */
+    padding: 2px;
+    margin-top: 16px;
+    font-size: 14px;
     }
 
     main {
       flex: 1;
       padding: 20px;
-      
+      font-family: "Courier New", serif;
     }
 
     section {
         max-width: 800px;
         margin: 40px auto;
         line-height: 1.6;
-        font-family: Arial, sans-serif;
+        font-family: "Courier New", serif;
         text-align: left;        
     }
 
@@ -47,16 +61,23 @@
     padding: 15px;
     margin-top: 40px;
     font-size: 14px;
+    font-family: "Courier New", serif;
+    }
+
+    .big-letter {
+    font-size: 1.5em;
     }
     </style>
   <title>Devilry Games: Home</title>
 </head>
 
 <body>
+  <header>
+    <h1><span class="big-letter">D</span>EVILRY <span class="big-letter">G</span>AMES</h1>
+    <h3><em>Sneaky indie games out of the underworld.</em></h3>
+  </header>
 
   <main>
-    <h1>Devilry Games</h1>
-    <h3><em>Sneaky indie games out of the underworld.</em></h3>
     <img src="logo.png" alt="Devilry Games Logo">
     <br>
     <section>
@@ -88,5 +109,3 @@
 </body>
 
 </html>
-
-
