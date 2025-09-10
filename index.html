@@ -19,6 +19,7 @@
         font-size: 3em;
         margin-bottom: 0px;
         font-family: "Georgia", serif;
+        text-shadow: 2px 2px 4px #000;
     }
 
     h2 {
@@ -67,6 +68,26 @@
     .big-letter {
     font-size: 1.5em;
     }
+
+    .inspirations {
+      display: grid;
+      grid-template-columns: 1fr 2fr; /* first column (image) smaller, second column wider */
+      gap: 20px 40px; /* row gap, column gap */
+      max-width: 800px;
+      margin: auto;
+      align-items: center;
+    }
+
+    .inspiration-item {
+      display: contents; /* makes each item’s children fill the grid cells */
+    }
+
+    .inspirations img {
+      max-width: 100%;
+      border-radius: 8px; /* optional: soften corners */
+      box-shadow: 0 0 10px rgba(0,0,0,0.3); /* optional subtle glow */
+    }
+
     </style>
   <title>Devilry Games: Home</title>
 </head>
@@ -79,26 +100,56 @@
 
   <main>
     <img src="logo.png" alt="Devilry Games Logo">
-    <br>
+    <br><br>
+
     <section>
-        <h2>Welcome to Devilry Games</h2>
-        <p>
-            We are a small indie video game company based out of New York State, formed in May of 2024.
-        </p>
-        <p>
-            At Devilry Games, we value minimalistic games with intuitive and engaging mechanics and storytelling. We don’t spend excessive resources on high-resolution assets because we believe our efforts are better focused on crafting addictive game mechanics and writing story elements that are moving and powerful.
-        </p>
-        <p>
-            Our team consists of a handful of people, each pursuing game development as a side hobby, not a main job, which means development is slow. However, keeping the team small is important to us so that we can maintain a clear, unified vision without muddying the process with too many discordant voices.
-        </p>
-        <p>
-            Nonetheless, please tune in for development updates! We’d love to hear your feedback — whether you love our games or think they stink. We might not always follow your advice, but we want to hear it anyway.
-        </p>
-        <br>
-        <h2>Games Under Devil-opment</h2>
-        <p>Check out the games we're currently working on!</p>
-        <iframe frameborder="0" src="https://itch.io/embed/2710907?linkback=true&amp;bg_color=fe7c77" width="552" height="167"><a href="https://devilry-games-llc.itch.io/infernal-duty">Infernal Duty (Demo) by Devilry Games, LLC</a></iframe>
+      <h2>Introducing Devilry Games</h2>
+      <p>
+        We are a small indie video game company based out of New York State, formed in May of 2024.
+      </p>
+      <p>
+        At Devilry Games, we value minimalistic games with intuitive and engaging mechanics and storytelling. We don’t spend excessive resources on high-resolution assets because we believe our efforts are better focused on crafting addictive game mechanics and writing story elements that are moving and powerful.
+      </p>
+      <p>
+        Our team consists of a handful of people, each pursuing game development as a side hobby, not a main job, which means development is slow. However, keeping the team small is important to us so that we can maintain a clear, unified vision without muddying the process with too many discordant voices.
+      </p>
+      <p>
+        Nonetheless, please tune in for development updates! We’d love to hear your feedback — whether you love our games or think they stink. We might not always follow your advice, but we want to hear it anyway.
+      </p>
     </section>
+
+    <br>
+
+    <section>
+      <h2>Our Top Inspirations</h2>
+      <div class="inspirations">
+        <div class="inspiration-item">
+          <img src="megaman.jpg" alt="Mega Man">
+          <p>We love <strong>Mega Man</strong>! Our lead designer, Jesse, grew up playing every title in the series, including the spin-offs. That influence shows — many of our projects lean toward fast-paced 2D side-scrollers with tight platforming and demanding action. Yes, our games can be tough, but never unfair. Every level is thoroughly play-tested and cleared by Jesse before release, so while the challenge is real, it’s always beatable. We hope you’re ready to rise to it!</p>
+        </div>
+        <div class="inspiration-item">
+          <img src="finalfantasyix.jpg" alt="Final Fantasy">
+          <p>The worlds and stories of <strong>Final Fantasy</strong> have left a lasting mark on our team. They’ve shown us how games can be not only beautiful and immersive, but also life-changing. We aim to craft experiences that capture even a fraction of that wonder — stories that stick with you long after you put the controller down.</p>
+        </div>
+        <div class="inspiration-item">
+          <img src="goldensun.png" alt="Golden Sun">
+          <p><strong>Golden Sun</strong> is a perfect example of what we aim to achieve: simple, low-resolution visuals paired with expressive characters and innovative mechanics. Its combat system remains one of the most creative in RPG history, and the way it combines music, worldbuilding, and storytelling into a cohesive whole is nothing short of brilliant. That balance of accessibility and depth is something we strive for in every game we make.</p>
+        </div>
+        <div class="inspiration-item">
+          <img src="metalgearsolid.png" alt="Metal Gear Solid">
+          <p>Hideo Kojima’s work on <strong>Metal Gear Solid</strong> is a masterclass in design. What appears at first to be just a stealth-puzzle game is layered with clever mechanics, intricate worldbuilding, and deeply human storytelling. Metal Gear Solid is full of moments that make you stop and think, “Wait… can a game really do that?” That playful ingenuity — where mechanics surprise you as much as the narrative — is exactly the kind of creativity we aspire to bring into our own games.</p>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <section>
+      <h2>Games Under Devil-opment</h2>
+      <p>Check out the games we're currently working on!</p>
+      <iframe frameborder="0" src="https://itch.io/embed/2710907?linkback=true&amp;bg_color=fe7c77" width="552" height="167"><a href="https://devilry-games-llc.itch.io/infernal-duty">Infernal Duty (Demo) by Devilry Games, LLC</a></iframe>
+    </section>
+
   </main>
 
   <footer>
@@ -109,5 +160,6 @@
 </body>
 
 </html>
+
 
 
